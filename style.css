@@ -1,0 +1,189 @@
+/* Importamos fuentes estilo antiguo/clásico desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=IM+Fell+English:ital@0;1&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IM Fell English', serif; /* Fuente con estilo impreso antiguo */
+    color: #2b1d0c; /* Tinta café/marrón oscura */
+    /* Fondo estilo pergamino/mármol antiguo */
+    background: #f2e3c6 url('https://www.transparenttextures.com/patterns/aged-paper.png');
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Capa de textura sepia y viñeta vintage en los bordes */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 40%, rgba(43, 29, 12, 0.4) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Header / Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    font-family: 'Cinzel', serif; /* Fuente estilo grabado romano/griego */
+    font-size: 3.8rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4a150e; /* Rojo burdeos clásico */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+    color: #8c6d27; /* Dorado viejo */
+    font-style: italic;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    color: #5c4428;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Layout Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #4a150e;
+    border-bottom: 2px solid #8c6d27;
+    display: inline-block;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+/* Grid de Tarjetas */
+.grid-filosofos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+/* Tarjeta estilo Pergamino / Papiro Antiguo */
+.card {
+    background: #e8d5b5;
+    border: 2px solid #8c6d27;
+    border-radius: 4px; /* Esquinas casi rectas, estilo libro antiguo */
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(140, 109, 39, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3), inset 0 0 25px rgba(140, 109, 39, 0.3);
+}
+
+/* Imágenes con tono Sepia/Grabado */
+.card-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0.6) contrast(1.1) brightness(0.9); /* Efecto foto/escultura antigua */
+    border-bottom: 2px solid #8c6d27;
+}
+.socrates-img {
+    background-image: url('socrates.webp');
+}
+.platon-img {
+    background-image: url('Platon.jpg');
+}
+.aristoteles-img {
+    background-image: url('aristoteles.webp');
+}
+.descartes-img {
+    background-image: url('descartes.webp');
+}
+.rousseau-img {
+    background-image: url('rousseau.jpg');
+}
+
+.nietzsche-img {
+    background-image: url('friedrich-nietzsche.jpeg');
+}
+.marx-img {
+    background-image: url('marx.webp');
+}
+
+.kant-img {
+    background-image: url('kant.jpg');
+}
+
+.diogenes-img {
+    background-image: url('diogenes.jpg');
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    padding: 22px;
+}
+
+.filosofo-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #8c6d27;
+    letter-spacing: 2px;
+}
+
+.filosofo-nombre {
+    font-family: 'Cinzel', serif;
+    font-size: 1.35rem;
+    color: #4a150e;
+    margin: 6px 0 12px;
+}
+
+.frase-callejera {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #2b1d0c;
+    font-style: italic;
+}
+/* Corrección para que la etiqueta <a> respete el tamaño exacto del Grid */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;         /* o block, pero flex permite estirar la tarjeta */
+    flex-direction: column;
+    width: 100%;
+    height: 100%;          /* Asegura que llene todo el alto disponible */
+}
+
+.card-link:visited,
+.card-link:active,
+.card-link:hover {
+    color: inherit;
+    text-decoration: none;
+}

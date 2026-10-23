@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filocalle | René Descartes</title>
+  <style>
+    :root {
+      --bg-papyrus: #f6f0dd;
+      --card-bg: #fdfbf7;
+      --accent-yellow: #d97706;
+      --accent-gold: #b45309;
+      --border-ancient: #d4c5a9;
+      --text-dark: #292524;
+      --text-muted: #57534e;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+
+    body {
+      background-color: var(--bg-papyrus);
+      color: var(--text-dark);
+      line-height: 1.7;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 35px;
+      padding-top: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #fef3c7;
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      border: 1px solid #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+      color: #1c1917;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      margin-top: 35px;
+      border-left: 5px solid var(--accent-yellow);
+      padding-left: 12px;
+      color: #1c1917;
+    }
+
+    .content-box {
+      background-color: var(--card-bg);
+      border: 2px solid var(--border-ancient);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      margin-bottom: 30px;
+    }
+
+    .content-box p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+      color: #332f2e;
+    }
+
+    .content-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-phrase {
+      background-color: #fffbeb;
+      border-left: 4px solid var(--accent-gold);
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-style: italic;
+      margin: 18px 0;
+      color: #44403c;
+    }
+
+    .fail-section {
+      background-color: #fffbeb;
+      border: 2px dashed var(--accent-yellow);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-top: 35px;
+    }
+
+    .fail-section h3 {
+      color: var(--accent-gold);
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .tag-cristiano {
+      display: inline-block;
+      background-color: #fef3c7;
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-right: 6px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-ancient);
+      padding-top: 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header>
+      <span class="badge">Filosofía Moderna • Filocalle</span>
+      <h1>RENÉ DESCARTES</h1>
+      <p class="subtitle">El tío que se ralló tanto la cabeza que dudó de absolutamente todo para reiniciar el sistema.</p>
+    </header>
+
+    <!-- EL LORE Y LA DUDA METÓDICA -->
+    <h2 class="section-title">El Lore: La raya mental del siglo XVII</h2>
+    <div class="content-box">
+      <p>
+        Imagina el panorama: un buen día <strong>René Descartes</strong> se levantó de la cama, se puso a pensar y le dio un ataque de paranoia existencial. Empezó a dudar de todo lo que le rodeaba, hasta del hecho mismo de ir a mear por las mañanas: <em>"¿Estoy meando de verdad o estoy soñando despierto que meo y me voy a mear en la cama?"</em>.
+      </p>
+      <p>
+        Pensó que los sentidos te engañan constantemente (como cuando ves un espejismo en la carretera o crees oír una notificación del móvil que nunca llegó). Así que decidió hacer un borrado a todo su conocimiento y aplicar la <strong>Duda Metódica</strong>: no dar nada por sentado si había un 1% de posibilidades de que fuera un 'fake'.
+      </p>
+    </div>
+
+    <!-- SU FRASE Y FILOSOFÍA -->
+    <h2 class="section-title">El "Aja Moment": La primera certeza</h2>
+    <div class="content-box">
+      <p>
+        Buscando algo 100% seguro entre tanto lío, se dio cuenta de algo clave: da igual cuánto dude o cuántas tonterías se imagine, para estar dudando **tiene que estar pensando**, y para pensar **tiene que existir**.
+      </p>
+      
+      <div class="highlight-phrase">
+        Ahí soltó la mítica frase en latín: <strong>"Cogito, ergo sum"</strong> (<em>Pienso, luego existo</em>). Es el 'reset' definitivo: no sé si el mundo real existe, pero sé que yo existo porque me estoy rallando la cabeza en este preciso instante.
+      </div>
+
+      <p>
+        A partir de ahí, inventó el <strong>Racionalismo</strong>: la idea de que la razón y las matemáticas son las únicas fuentes fiables para llegar a la verdad, mandando los sentidos al banquillo.
+      </p>
+    </div>
+
+    <!-- EL GENIO MALIGNO: EL AUTOGOL DE DESCARTES -->
+    <div class="fail-section">
+      <h3>👹 El Genio Maligno: Cómo tiró su propia teoría por la borda</h3>
+      <p style="margin-bottom: 16px; color: var(--text-muted); font-size: 0.95rem;">
+        Descartes había construido un imperio teórico casi perfecto partiendo del "Pienso, luego existo". Pero de repente, se le fue la olla y él solito se metió un tiro en el pie.
+      </p>
+
+      <p style="margin-bottom: 14px;">
+        <span class="tag-cristiano">Autogol histórico</span> Para poner a prueba su lógica, se inventó la hipótesis del <strong>Genio Maligno</strong> (básicamente el concepto de <em>Matrix</em> o un *hacker* supremo): ¿Y si existe un ente duendecillo o un superdemonio cuyo único trabajo es engañar a mi cerebro para que yo crea que 2+2=4 cuando en realidad es 5?
+      </p>
+
+      <div class="highlight-phrase">
+        Al meter el elemento del Genio Maligno, se atrancó tanto en su propia paranoia que arruinó la solidez de su teoría. Para salir del pozo que él mismo se había cavado, tuvo que sacarse de la manga a Dios como "escudo protector" diciendo que un Dios bueno no permitiría que un duende nos engañe. Una chapuza argumental de última hora para salvar los muebles.
+      </div>
+
+      <p style="font-size: 0.95rem; color: #44403c;">
+        <strong>Moraleja de calle:</strong> Descartes fue un genio montando el rompecabezas, pero se comió tanto el tarro con el Genio Maligno que tuvo que recurrir al truco fácil para no quedarse atrapado en un bucle infinito.
+      </p>
+      <p style="font-size: 0.95rem; color: #44403c;">
+        <strong>Conclusion</strong> Decartes se las fue de flipado y de fumado y acabo cayendo en su propia trampa.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>

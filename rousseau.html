@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filocalle | Jean-Jacques Rousseau</title>
+  <style>
+    :root {
+      --bg-papyrus: #f6f0dd;
+      --card-bg: #fdfbf7;
+      --accent-yellow: #d97706;
+      --accent-gold: #b45309;
+      --border-ancient: #d4c5a9;
+      --text-dark: #292524;
+      --text-muted: #57534e;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+
+    body {
+      background-color: var(--bg-papyrus);
+      color: var(--text-dark);
+      line-height: 1.7;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 35px;
+      padding-top: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #fef3c7;
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      border: 1px solid #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+      color: #1c1917;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      margin-top: 35px;
+      border-left: 5px solid var(--accent-yellow);
+      padding-left: 12px;
+      color: #1c1917;
+    }
+
+    .content-box {
+      background-color: var(--card-bg);
+      border: 2px solid var(--border-ancient);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      margin-bottom: 30px;
+    }
+
+    .content-box p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+      color: #332f2e;
+    }
+
+    .content-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-phrase {
+      background-color: #fffbeb;
+      border-left: 4px solid var(--accent-gold);
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-style: italic;
+      margin: 18px 0;
+      color: #44403c;
+    }
+
+    .fail-section {
+      background-color: #fffbeb;
+      border: 2px dashed var(--accent-yellow);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-top: 35px;
+    }
+
+    .fail-section h3 {
+      color: var(--accent-gold);
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .tag-cristiano {
+      display: inline-block;
+      background-color: #fef3c7;
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-right: 6px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-ancient);
+      padding-top: 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header>
+      <span class="badge">Filosofía Ilustrada • Filocalle</span>
+      <h1>ROUSSEAU</h1>
+      <p class="subtitle">"Rousseau, el hombre que nació libre pero se dio cuenta que era un esclavo más."</p>
+    </header>
+
+    <!-- EL LORE Y EL BUEN SALVAJE -->
+    <h2 class="section-title">El Lore: El Estado de Naturaleza y el "Buen Salvaje"</h2>
+    <div class="content-box">
+      <p>
+        Imagina la película: mientras los filósofos de su época fardaban del progreso y las luces, el tito <strong>Jean-Jacques Rousseau</strong> se paró a mirar la calle y dijo que nos estábamos volviendo unos fantasmas.
+      </p>
+      <p>
+        Para entender el lío, Rousseau se imaginó cómo era la peña antes de que existieran los países, las leyes y el postureo: el <strong>Estado de Naturaleza</strong>. Decía que el ser humano original no era malo ni buscaba líos; era un <em>"Buen Salvaje"</em> que vivía tranquilo en el monte, guiado solo por dos impulsos sanos: el <strong>Amor de Sí</strong> (cuidarse la vida sin joder al prójimo) y la <strong>Piedad</strong> (sentir empatía pura de barrio cuando ves a otro pasarlo mal).
+      </p>
+    </div>
+
+    <!-- LA PROPIEDAD PRIVADA -->
+    <h2 class="section-title">La Trampa: El origen de la desigualdad</h2>
+    <div class="content-box">
+      <p>
+        ¿Cuándo se fue todo al traste? Rousseau lo tiene clarísimo. El verdadero drama de la humanidad empezó el día que a un espabilado se le ocurrió cercar un terreno y decir: <em>"Esto es mío"</em>, y los demás, de pura buena fe, le creyeron.
+      </p>
+      
+      <div class="highlight-phrase">
+        Ahí nació la <strong>Propiedad Privada</strong> y con ella la envidia, el postureo y la desigualdad. El sano "amor de sí" se convirtió en "amor propio" (vanidad y ganas de ser más que el vecino). Los ricos crearon las leyes para blindar sus terrenos, vendiéndole la moto a los pobres de que era por su seguridad. Un atraco a mano armada.
+      </div>
+
+      <p>
+        A partir de ahí, Rousseau plantea su obra cumbre, <strong>El Contrato Social</strong>: no podemos volver a las cavernas, así que hay que refundar la sociedad para recuperar la libertad pero con reglas justas de verdad.
+      </p>
+    </div>
+
+    <!-- EL CONTRATO SOCIAL Y LA VOLUNTAD GENERAL -->
+    <div class="fail-section">
+      <h3>📜 El Contrato Social: La Voluntad General o la Dictadura del Pueblo</h3>
+      <p style="margin-bottom: 16px; color: var(--text-muted); font-size: 0.95rem;">
+        Rousseau propone que el poder no es de los reyes ni de los políticos vendidos, sino de la soberanía popular. Pero en su jugada maestra metió un concepto con doble filo.
+      </p>
+
+      <p style="margin-bottom: 14px;">
+        <span class="tag-cristiano">El arma de doble filo</span> Para organizar el barrio, inventó la <strong>Voluntad General</strong>: cuando la peña vota o decide leyes, no puede pensar en <em>"¿qué me conviene a mí para sacar tajada?"</em>, sino en lo que le conviene a todo el colectivo. La paradoja es que si alguien no quiere acatar la voluntad general, la comunidad le "obligará a ser libre".
+      </p>
+
+      <div class="highlight-phrase">
+        Al buscar una democracia perfecta donde la comunidad está por encima del individuo, Rousseau creó una idea poderosísima pero peligrosa: si la mayoría decide lo que es "el bien común", las minorías se quedan sin margen de maniobra.
+      </div>
+
+      <p style="font-size: 0.95rem; color: #44403c;">
+        <strong>Moraleja de calle:</strong> Rousseau vio con una claridad brutal cómo el sistema y las apariencias nos convierten en esclavos, pero su receta de la "Voluntad General" es tan exigente que roza la utopía o el control total del barrio.
+      </p>
+      <p style="font-size: 0.95rem; color: #44403c;">
+        <strong>Conclusión:</strong> Rousseau se dio cuenta del engaño de la sociedad moderna, nos quitó la venda de los ojos, pero nos dejó el marrón de ver cómo coño ser libres de verdad sin pisarnos los unos a los otros.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>

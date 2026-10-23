@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filocalle | Platón</title>
+  <style>
+    :root {
+      --bg-papyrus: #f6f0dd;
+      --card-bg: #fdfbf7;
+      --accent-yellow: #d97706;
+      --accent-gold: #b45309;
+      --border-ancient: #d4c5a9;
+      --text-dark: #292524;
+      --text-muted: #57534e;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+
+    body {
+      background-color: var(--bg-papyrus);
+      color: var(--text-dark);
+      line-height: 1.7;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 35px;
+      padding-top: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #fef3c7;
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      border: 1px solid #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+      color: #1c1917;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      margin-top: 35px;
+      border-left: 5px solid var(--accent-yellow);
+      padding-left: 12px;
+      color: #1c1917;
+    }
+
+    /* BLOQUE DE TEXTO CONTINUO */
+    .content-box {
+      background-color: var(--card-bg);
+      border: 2px solid var(--border-ancient);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      margin-bottom: 30px;
+    }
+
+    .content-box p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+      color: #332f2e;
+    }
+
+    .content-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-phrase {
+      background-color: #fffbeb;
+      border-left: 4px solid var(--accent-gold);
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-style: italic;
+      margin: 18px 0;
+      color: #44403c;
+    }
+
+    /* SECCIÓN MITO DE LA CAVERNA */
+    .caverna-section {
+      background-color: #fffbeb;
+      border: 2px dashed var(--accent-yellow);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-top: 35px;
+    }
+
+    .caverna-section h3 {
+      color: var(--accent-gold);
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .caverna-step {
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px border-style var(--border-ancient);
+    }
+
+    .caverna-step:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .caverna-step h4 {
+      color: #1c1917;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .tag-cristiano {
+      display: inline-block;
+      background-color: #fef3c7;
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-right: 6px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-ancient);
+      padding-top: 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header>
+      <span class="badge">Filosofía Antigua • Filocalle</span>
+      <h1>PLATÓN</h1>
+      <p class="subtitle">El alumno estrella que convirtió las ideas en el verdadero motor del mundo.</p>
+    </header>
+
+    <!-- ¿QUIÉN ERA Y DE QUIÉN ERA DISCÍPULO? -->
+    <h2 class="section-title">El Lore: De dónde sale Platón</h2>
+    <div class="content-box">
+      <p>
+        <strong>Platón</strong> (cuyo nombre real era Aristocles, pero le llamaban Platón por tener las espaldas anchas) era el <strong>discípulo número uno de Sócrates</strong>. Para él, Sócrates no era solo su profesor, era su referente absoluto. 
+      </p>
+      <p>
+        Cuando la democracia ateniense condenó a muerte a Sócrates haciéndole beber veneno, a Platón se le rompió el corazón y se le cruzaron los cables. Pensó: <em>"Si una sociedad mata al hombre más justo de la historia, es que esta sociedad está completamente podrida"</em>. 
+      </p>
+      <div class="highlight-phrase">
+        Tras el trauma de ver morir a su maestro, Platón fundó <strong>La Academia</strong> (básicamente la primera universidad de la historia) para enseñar a la gente a pensar con la cabeza antes de gobernar o votar.
+      </div>
+      <p>
+        A diferencia de Sócrates, que no escribió un solo tuit, Platón escribió un montón de libros en formato de "diálogos", donde el personaje principal casi siempre era su maestro Sócrates respondiendo a todo tipo de dudas.
+      </p>
+    </div>
+
+    <!-- ¿QUÉ PENSABA? -->
+    <h2 class="section-title">La Movida: Las Ideas vs. La Realidad</h2>
+    <div class="content-box">
+      <p>
+        Platón decía que el mundo está dividido en dos pisos:
+      </p>
+      <p>
+        1. <strong>El Mundo Sensible (lo que ves y tocas):</strong> Es el mundo físico, imperfecto y lleno de sombras. Las cosas aquí se rompen, envejecen o cambian. Es como ver fotos con mil filtros en redes sociales: parecen bonitas, pero no son 100% reales.
+      </p>
+      <p>
+        2. <strong>El Mundo de las Ideas (la Verdadera Realidad):</strong> Es un plano abstracto e inmortal donde existen las "moldes" o modelos perfectos de todo. En este mundo está la <em>Idea de Belleza</em>, la <em>Idea de Justicia</em> o el modelo perfecto de un perro. Lo que ves en la Tierra son solo copias cutres de esas ideas perfeccionadas.
+      </p>
+    </div>
+
+    <!-- EL MITO DE LA CAVERNA EXPLICADO EN JERGA -->
+    <div class="caverna-section">
+      <h3>🕯️ El Mito de la Caverna (En versión de calle)</h3>
+      <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.95rem;">
+        Platón inventó esta historia para explicar cómo la mayoría de la gente vive engañada creyendo que las apariencias son la verdad:
+      </p>
+
+      <div class="caverna-step">
+        <h4><span class="tag-cristiano">Paso 1</span> La Caverna y los Cautivos</h4>
+        <p>Imagínate a unos chavales encadenados dentro de una cueva desde que nacieron, mirando fijamente a una pared blanca. Detrás de ellos hay un fuego y gente pasando objetos. En la pared solo ven las <strong>sombras proyectadas</strong> de esos objetos. Como no conocen otra cosa, para ellos <em>las sombras son la única realidad</em>.</p>
+      </div>
+
+      <div class="caverna-step">
+        <h4><span class="tag-cristiano">Paso 2</span> La Salida a la Luz (El Despertar)</h4>
+        <p>Un prisionero se libera, sale fuera de la cueva y al principio el sol le ciega un montón (le duele la cabeza de ver la verdad). Pero poco a poco se acostumbra, ve los árboles, los animales reales y el Sol. Se da cuenta de que lo que veía en la cueva era una <strong>versión cutre y manipulada</strong> de las cosas reales.</p>
+      </div>
+
+      <div class="caverna-step">
+        <h4><span class="tag-cristiano">Paso 3</span> El Regreso (Tratar de abrir los ojos al resto)</h4>
+        <p>El tío vuelve a la cueva emocionado para decirles a sus colegas: <em>"¡Tíos, lo que vemos aquí es un 'fake', fuera hay un mundo de verdad!"</em>. ¿Qué hacen los de dentro? Se ríen de él, le toman por loco y dicen que si intenta desencadenarles para sacarlos, le matan. (Un guiño clarísimo a lo que le hicieron a su maestro Sócrates).</p>
+      </div>
+
+      <div class="highlight-phrase" style="margin-top: 20px; margin-bottom: 0;">
+        <strong>Moraleja:</strong> Vivir mirando la cueva es tragar con la opinión de la masa (las <em>fake news</em>, las apariencias o la presión social). Salir de la cueva es usar la filosofía para pensar por ti mismo y buscar la verdad aunque incomode.
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
